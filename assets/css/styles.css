@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: medium;
+    font-size: 18px;
+}
+.nav-border::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 3px;
+    background-color: #36e794;
+    opacity: 0.7;
+}
+
+.main-carr .carousel-item {
+    background-image: url(../../midia/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-carousel {
+    margin: auto;
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+
+
+.first-carousel h2 {
+    color: #c01d35;
+    font-size: 40px;
+}
+.first-carousel p {
+    color: aliceblue;
+    padding: 10px !important;
+    text-shadow: 1px 1px 2px black;
+}
+.first-carousel button {
+    position: absolute;
+    bottom: 15px;
+}
+
+
+.about-us .col {
+    height: 600px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+}
+
+.about-us h3 {
+    color: #c01d35;
+    padding: 10px;
+}
+
+.about-us p {
+    max-width: 500px;
+    font-size: 13px;
+    line-height: 25px;
+}
+.about-us .btn-green {
+    background-color: #AEDA6F;
+    color: #AEDA6F;
+    border: none;
+}
+.about-us .btn-green:hover {
+    background-color: #AEDA6F;
+    color: #AEDA6F;
+    border: none;
+}
+
+.about-us button {
+    position: absolute;
+    bottom: 15px;
+}
+
+.courses .col {
+    height: 600px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+}
+
+.courses h3 {
+    color: #c01d35;
+}
+
+.courses p {
+    max-width: 500px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.courses .btn-green {
+    background-color: #AEDA6F;
+    color: aliceblue;
+    border: none;
+}
+.courses .btn-green:hover {
+    background-color: #AEDA6F;
+    border: none;
+}
+
+.courses .btn-green {
+    position: absolute;
+    bottom: 15px;
+}
+
+.articles {
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.articles::-webkit-scrollbar {
+    display: none;
+}
+.section-articles {
+    position: relative;
+}
+
+.articles-btn-next {
+    position:absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    top: 40%;
+    right: 20px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid #c01d35;
+    cursor: pointer;
+}
+.article {
+    min-width: 320px;
+    margin: 15px;
+    border-radius:5px;
+    overflow: hidden;
+    cursor: default;
+}
+
+
+.article .photo {
+    height: 250px;
+    background-color: #999;
+}
+
+.article .texts {
+    background-color: #E5E5E5;
+    padding: 20px;
+    transition: .5s;
+}
+.article-active .texts {
+    
+    background-color: #AEDA6F;
+}
+
+.article .info {
+    font-size: 12px;
+    color: #c01d35;
+}
+
+.bars-articles {
+    display: flex;
+    justify-content: center;
+    left: 50%;
+}
+
+.bar-articles {
+    height: 3px;
+    margin: 5px;
+    width: 30px;
+    cursor: pointer;
+    background-color: #bebebe;
+}
+.bar-articles.bar-active{
+    background-color: #c01d35;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.footer .nav-link {
+    font-size: 16px;
+}
+
+.social {
+    display: flex;
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+    background-color: #999;
+    margin: 5px;
+}
+.copy {
+    max-width: 400px;
+    font-size: 13px;
+    background-color: black !important;
+}
+
+
+
+@media (max-width:833px){
+    .footer{
+        flex-direction: column;
+    }
+}
